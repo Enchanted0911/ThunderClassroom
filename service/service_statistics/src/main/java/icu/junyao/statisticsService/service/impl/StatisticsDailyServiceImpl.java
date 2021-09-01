@@ -1,7 +1,6 @@
 package icu.junyao.statisticsService.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import icu.junyao.commonUtils.R;
 import icu.junyao.statisticsService.client.UcenterClient;
 import icu.junyao.statisticsService.entity.StatisticsDaily;
 import icu.junyao.statisticsService.mapper.StatisticsDailyMapper;

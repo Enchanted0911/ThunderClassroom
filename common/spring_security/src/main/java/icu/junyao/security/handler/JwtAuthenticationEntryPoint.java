@@ -1,12 +1,10 @@
-package cn.bizfocus.scm.order.config;
+package icu.junyao.security.handler;
 
-import cn.bizfocus.scm.order.enums.ResultCode;
-import cn.bizfocus.scm.order.res.R;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import icu.junyao.serviceBase.enums.R;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.security.authentication.*;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
@@ -18,7 +16,7 @@ import java.io.PrintWriter;
 import java.util.Optional;
 
 /**
- * @author songxuan
+ * @author wu
  */
 @Component
 @RequiredArgsConstructor

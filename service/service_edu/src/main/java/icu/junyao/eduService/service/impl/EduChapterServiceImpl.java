@@ -9,10 +9,8 @@ import icu.junyao.eduService.entity.chapter.VideoVo;
 import icu.junyao.eduService.mapper.EduChapterMapper;
 import icu.junyao.eduService.service.EduChapterService;
 import icu.junyao.eduService.service.EduVideoService;
-import icu.junyao.serviceBase.exceptionHandler.JunYaoException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

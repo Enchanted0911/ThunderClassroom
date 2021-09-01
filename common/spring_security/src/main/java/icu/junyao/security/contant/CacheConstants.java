@@ -1,4 +1,4 @@
-package cn.bizfocus.scm.order.constant;
+package icu.junyao.security.contant;
 
 
 /**
@@ -13,12 +13,4 @@ public interface CacheConstants {
      * 用户缓存
      */
     String USER_DETAILS = "user_details";
-    /**
-     * 商品搜索
-     */
-    String COMMODITY_SEARCH = "commodity_search";
-    /**
-     * 小品种下单周次
-     */
-    String MOQ_DAY = "moq_day";
 }

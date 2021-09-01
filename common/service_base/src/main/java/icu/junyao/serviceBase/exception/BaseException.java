@@ -1,13 +1,12 @@
-package cn.bizfocus.scm.order.exception;
+package icu.junyao.serviceBase.exception;
 
-import cn.bizfocus.scm.order.enums.ResponseEnum;
+import icu.junyao.serviceBase.enums.ResponseEnum;
 import lombok.Getter;
 
 /**
  * <p>基础异常类，所有自定义异常类都需要继承本类</p>
  *
- * @author sprainkle
- * @date 2019/5/2
+ * @author wu
  */
 @Getter
 public class BaseException extends RuntimeException {

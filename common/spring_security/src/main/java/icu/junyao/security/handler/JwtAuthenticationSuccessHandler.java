@@ -1,4 +1,4 @@
-package icu.junyao.security.security.jwt;
+package icu.junyao.security.handler;
 
 import cn.bizfocus.scm.order.res.DictItemRes;
 import cn.bizfocus.scm.order.res.LoginRes;

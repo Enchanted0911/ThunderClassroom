@@ -1,7 +1,6 @@
-package cn.bizfocus.scm.order.enums;
+package icu.junyao.serviceBase.enums;
 
-
-import cn.bizfocus.scm.order.exception.assertion.BaseExceptionAssert;
+import icu.junyao.serviceBase.exception.assertion.BaseExceptionAssert;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

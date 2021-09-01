@@ -1,7 +1,6 @@
 package icu.junyao.statisticsService.controller;
 
 
-import icu.junyao.commonUtils.R;
 import icu.junyao.statisticsService.service.StatisticsDailyService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

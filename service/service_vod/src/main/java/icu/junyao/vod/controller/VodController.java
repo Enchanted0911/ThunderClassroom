@@ -4,13 +4,10 @@ import com.aliyuncs.DefaultAcsClient;
 import com.aliyuncs.vod.model.v20170321.DeleteVideoRequest;
 import com.aliyuncs.vod.model.v20170321.GetVideoPlayAuthRequest;
 import com.aliyuncs.vod.model.v20170321.GetVideoPlayAuthResponse;
-import icu.junyao.commonUtils.R;
-import icu.junyao.serviceBase.exceptionHandler.JunYaoException;
 import icu.junyao.vod.service.VodService;
 import icu.junyao.vod.utils.ConstantVodUtils;
 import icu.junyao.vod.utils.InitObject;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 

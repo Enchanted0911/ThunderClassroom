@@ -1,9 +1,7 @@
 package icu.junyao.ossService.controller;
 
-import icu.junyao.commonUtils.R;
 import icu.junyao.ossService.service.OssService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 

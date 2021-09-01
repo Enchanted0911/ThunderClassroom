@@ -1,14 +1,12 @@
-package cn.bizfocus.scm.order.exception;
+package icu.junyao.serviceBase.exception;
 
-
-import cn.bizfocus.scm.order.enums.ResponseEnum;
+import icu.junyao.serviceBase.enums.ResponseEnum;
 
 /**
  * <p>业务异常</p>
  * <p>业务处理时，出现异常，可以抛出该异常</p>
  *
- * @author sprainkle
- * @date 2019/5/2
+ * @author wu
  */
 public class BusinessException extends BaseException {
 

@@ -1,7 +1,5 @@
 package icu.junyao.statisticsService.client;
 
-import icu.junyao.commonUtils.R;
-
 /**
  * @author wu
  */

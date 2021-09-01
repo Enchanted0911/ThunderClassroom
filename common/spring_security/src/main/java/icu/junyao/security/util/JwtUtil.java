@@ -1,11 +1,13 @@
-package cn.bizfocus.scm.order.util;
+package icu.junyao.security.util;
 
-import cn.bizfocus.scm.order.security.JwtUser;
 import cn.bizfocus.scm.order.properties.JwtProperties;
+import cn.bizfocus.scm.order.security.JwtUser;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
+import icu.junyao.security.entity.JwtUser;
+import icu.junyao.security.properties.JwtProperties;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.stereotype.Component;

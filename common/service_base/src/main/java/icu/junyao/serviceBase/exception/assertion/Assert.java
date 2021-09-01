@@ -1,10 +1,6 @@
-package cn.bizfocus.scm.order.exception.assertion;
+package icu.junyao.serviceBase.exception.assertion;
 
-
-
-
-
-import cn.bizfocus.scm.order.exception.BaseException;
+import icu.junyao.serviceBase.exception.BaseException;
 
 import java.util.Collection;
 import java.util.Map;
@@ -12,6 +8,7 @@ import java.util.Map;
 /**
  * 枚举类异常断言，提供简单的方式判断条件，并在条件满足时抛出异常
  * 错误码和错误信息定义在枚举的枚举类中，在本断言方法中，传递错误信息需要的参数
+ * @author wu
  */
 public interface Assert {
 

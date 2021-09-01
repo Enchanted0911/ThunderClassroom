@@ -1,4 +1,4 @@
-package icu.junyao.serviceBase;
+package icu.junyao.serviceBase.config;
 
 
 import org.springframework.context.annotation.Bean;

@@ -3,7 +3,6 @@ package icu.junyao.eduOrder.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import icu.junyao.commonUtils.JwtUtils;
-import icu.junyao.commonUtils.R;
 import icu.junyao.eduOrder.entity.Order;
 import icu.junyao.eduOrder.service.OrderService;
 import lombok.RequiredArgsConstructor;

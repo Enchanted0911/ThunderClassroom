@@ -2,7 +2,6 @@ package icu.junyao.eduUserCenter.controller;
 
 
 import icu.junyao.commonUtils.JwtUtils;
-import icu.junyao.commonUtils.R;
 import icu.junyao.commonUtils.ordervo.UcenterMemberOrder;
 import icu.junyao.eduUserCenter.entity.UcenterMember;
 import icu.junyao.eduUserCenter.entity.vo.RegisterVo;

@@ -3,10 +3,8 @@ package icu.junyao.acl.controller;
 
 import icu.junyao.acl.entity.Permission;
 import icu.junyao.acl.service.PermissionService;
-import icu.junyao.commonUtils.R;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

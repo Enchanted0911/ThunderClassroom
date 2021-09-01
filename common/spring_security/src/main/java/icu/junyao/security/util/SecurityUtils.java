@@ -15,14 +15,17 @@
  * Author: lengleng (wangiegie@gmail.com)
  */
 
-package cn.bizfocus.scm.order.util;
+package icu.junyao.security.util;
 
-import cn.bizfocus.scm.order.security.JwtUser;
+import icu.junyao.security.entity.JwtUser;
 import lombok.experimental.UtilityClass;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 
 
+/**
+ * @author wu
+ */
 @UtilityClass
 public class SecurityUtils {
 
@@ -61,9 +64,9 @@ public class SecurityUtils {
     /**
      * 获取用户id
      *
-     * @return {@link Long}
+     * @return {@link String}
      */
-    public Long getUserId() {
+    public String getUserId() {
         return getUser().getId();
     }
 

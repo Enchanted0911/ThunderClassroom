@@ -1,9 +1,13 @@
 
-package cn.bizfocus.scm.order.enums;
+package icu.junyao.serviceBase.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
+
+/**
+ * @author wu
+ */
 
 @Getter
 @AllArgsConstructor
@@ -40,11 +44,11 @@ public enum ResultCode {
 	/**
 	 * code编码
 	 */
-	private String code;
+	private final String code;
 	/**
 	 * 中文信息描述
 	 */
-	private String message;
+	private final String message;
 
 
 }

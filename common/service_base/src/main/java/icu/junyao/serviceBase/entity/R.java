@@ -1,7 +1,7 @@
-package cn.bizfocus.scm.order.res;
+package icu.junyao.serviceBase.entity;
 
-import cn.bizfocus.scm.order.enums.ResultCode;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import icu.junyao.serviceBase.enums.ResultCode;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.NoArgsConstructor;

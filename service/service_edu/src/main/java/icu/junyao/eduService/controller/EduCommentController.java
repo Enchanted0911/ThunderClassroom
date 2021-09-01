@@ -2,9 +2,7 @@ package icu.junyao.eduService.controller;
 
 
 import icu.junyao.commonUtils.JwtUtils;
-import icu.junyao.commonUtils.R;
 import icu.junyao.eduService.client.UcenterClient;
-import icu.junyao.eduService.client.UcenterMember;
 import icu.junyao.eduService.entity.EduComment;
 import icu.junyao.eduService.service.EduCommentService;
 import io.swagger.annotations.ApiOperation;

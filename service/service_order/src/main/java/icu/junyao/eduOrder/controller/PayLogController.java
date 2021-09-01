@@ -1,7 +1,6 @@
 package icu.junyao.eduOrder.controller;
 
 
-import icu.junyao.commonUtils.R;
 import icu.junyao.eduOrder.service.PayLogService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

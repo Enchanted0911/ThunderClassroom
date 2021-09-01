@@ -1,11 +1,9 @@
 package icu.junyao.eduService.controller;
 
 
-import icu.junyao.commonUtils.R;
 import icu.junyao.eduService.entity.subject.OneSubject;
 import icu.junyao.eduService.service.EduSubjectService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import org.springframework.web.multipart.MultipartFile;

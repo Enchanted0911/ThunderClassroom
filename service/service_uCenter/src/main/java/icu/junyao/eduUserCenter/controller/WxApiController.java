@@ -6,7 +6,6 @@ import icu.junyao.eduUserCenter.entity.UcenterMember;
 import icu.junyao.eduUserCenter.service.UcenterMemberService;
 import icu.junyao.eduUserCenter.utils.ConstantWxUtils;
 import icu.junyao.eduUserCenter.utils.HttpClientUtils;
-import icu.junyao.serviceBase.exceptionHandler.JunYaoException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

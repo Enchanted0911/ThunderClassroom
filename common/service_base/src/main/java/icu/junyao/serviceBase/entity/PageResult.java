@@ -1,4 +1,4 @@
-package cn.bizfocus.scm.order.res;
+package icu.junyao.serviceBase.entity;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;

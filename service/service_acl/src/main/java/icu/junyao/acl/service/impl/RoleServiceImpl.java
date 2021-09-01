@@ -8,9 +8,7 @@ import icu.junyao.acl.entity.UserRole;
 import icu.junyao.acl.mapper.RoleMapper;
 import icu.junyao.acl.service.RoleService;
 import icu.junyao.acl.service.UserRoleService;
-import icu.junyao.serviceBase.exceptionHandler.JunYaoException;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 

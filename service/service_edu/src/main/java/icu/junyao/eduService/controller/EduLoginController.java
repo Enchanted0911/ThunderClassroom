@@ -1,6 +1,5 @@
 package icu.junyao.eduService.controller;
 
-import icu.junyao.commonUtils.R;
 import org.springframework.web.bind.annotation.*;
 
 /**

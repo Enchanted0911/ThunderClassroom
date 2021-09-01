@@ -1,6 +1,8 @@
-package cn.bizfocus.scm.order.entity;
+package icu.junyao.serviceBase.entity;
 
-import com.baomidou.mybatisplus.annotation.*;
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import lombok.Data;
 
 import java.time.LocalDateTime;
@@ -18,7 +20,7 @@ public abstract class BaseEntity {
     /**
      * id
      */
-    private Long id;
+    private String id;
 
 
     /**
@@ -38,13 +40,13 @@ public abstract class BaseEntity {
      * 创建者
      */
     @TableField(fill = FieldFill.INSERT)
-    private Long createdBy;
+    private String createdBy;
 
     /**
      * 更新者
      */
     @TableField(fill = FieldFill.INSERT_UPDATE)
-    private Long modifiedBy;
+    private String modifiedBy;
 
 
     /**

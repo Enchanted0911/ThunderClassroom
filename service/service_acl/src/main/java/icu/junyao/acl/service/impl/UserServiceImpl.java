@@ -3,11 +3,9 @@ package icu.junyao.acl.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import icu.junyao.acl.entity.Role;
 import icu.junyao.acl.entity.User;
 import icu.junyao.acl.mapper.UserMapper;
 import icu.junyao.acl.service.UserService;
-import icu.junyao.serviceBase.exceptionHandler.JunYaoException;
 import org.springframework.stereotype.Service;
 
 /**

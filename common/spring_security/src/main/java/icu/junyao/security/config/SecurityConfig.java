@@ -1,9 +1,11 @@
-package cn.bizfocus.scm.order.config;
+package icu.junyao.security.config;
 
-import cn.bizfocus.scm.order.properties.JwtProperties;
-import cn.bizfocus.scm.order.security.jwt.*;
-import cn.bizfocus.scm.order.util.JwtUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import icu.junyao.security.filter.JwtAuthenticationFilter;
+import icu.junyao.security.filter.JwtAuthorizationFilter;
+import icu.junyao.security.handler.*;
+import icu.junyao.security.properties.JwtProperties;
+import icu.junyao.security.util.JwtUtil;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;

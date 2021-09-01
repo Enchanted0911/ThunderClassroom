@@ -42,13 +42,14 @@
         <spring-cloud-starter-loadbalancer.version>3.0.3</spring-cloud-starter-loadbalancer.version>
         <spring-boot-starter-data-redis.version>2.5.1</spring-boot-starter-data-redis.version>
         <commons-pool2.version>2.10.0</commons-pool2.version>
-<!--        <jedis.version>3.6.0</jedis.version>-->
         <jackson-datatype-jsr310.version>2.12.3</jackson-datatype-jsr310.version>
         <jjwt.version>0.9.1</jjwt.version>
         <gateway.version>3.0.3</gateway.version>
         <openfeign.version>3.0.3</openfeign.version>
         <knife4j-spring-boot-starter.version>3.0.3</knife4j-spring-boot-starter.version>
         <bootstrap.version>3.0.3</bootstrap.version>
+        <hutool.version>5.7.11</hutool.version>
+        <java-jwt.version>3.18.1</java-jwt.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -207,12 +208,6 @@
                 <artifactId>commons-pool2</artifactId>
                 <version>${commons-pool2.version}</version>
             </dependency>
-<!--            &lt;!&ndash; https://mvnrepository.com/artifact/redis.clients/jedis &ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>redis.clients</groupId>-->
-<!--                <artifactId>jedis</artifactId>-->
-<!--                <version>${jedis.version}</version>-->
-<!--            </dependency>-->
             <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.datatype/jackson-datatype-jsr310 -->
             <dependency>
                 <groupId>com.fasterxml.jackson.datatype</groupId>
@@ -240,6 +235,18 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-jdbc</artifactId>
                 <version>2.5.0</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
+            <dependency>
+                <groupId>com.auth0</groupId>
+                <artifactId>java-jwt</artifactId>
+                <version>${java-jwt.version}</version>
             </dependency>
 
         </dependencies>

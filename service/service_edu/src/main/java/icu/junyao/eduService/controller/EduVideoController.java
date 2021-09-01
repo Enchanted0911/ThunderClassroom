@@ -1,15 +1,11 @@
 package icu.junyao.eduService.controller;
 
 
-import icu.junyao.commonUtils.R;
 import icu.junyao.eduService.client.VodClient;
-import icu.junyao.eduService.entity.EduChapter;
 import icu.junyao.eduService.entity.EduVideo;
 import icu.junyao.eduService.service.EduVideoService;
-import icu.junyao.serviceBase.exceptionHandler.JunYaoException;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 /**

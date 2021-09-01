@@ -1,4 +1,4 @@
-package icu.junyao.security.security.jwt;
+package icu.junyao.security.handler;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import icu.junyao.serviceBase.enums.R;

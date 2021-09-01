@@ -1,6 +1,7 @@
-package icu.junyao.security.security.jwt;
+package icu.junyao.security.filter;
 
 import com.auth0.jwt.interfaces.DecodedJWT;
+import icu.junyao.security.entity.JwtUser;
 import icu.junyao.security.util.JwtUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.AuthenticationManager;

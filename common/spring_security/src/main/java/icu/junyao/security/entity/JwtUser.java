@@ -1,4 +1,4 @@
-package icu.junyao.security.security;
+package icu.junyao.security.entity;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -14,11 +14,11 @@ import java.util.Collection;
 @EqualsAndHashCode(callSuper = false)
 @Data
 public class JwtUser implements UserDetails {
-    private Long id;
+    private String id;
 
     private String username;
 
-    private String nickName;
+    private String nickname;
 
     private String avatar;
 
@@ -51,10 +51,10 @@ public class JwtUser implements UserDetails {
     public JwtUser() {
     }
 
-    public JwtUser(Long id, String username, String realName, String avatar, String password, Collection<GrantedAuthority> authorities) {
+    public JwtUser(String id, String username, String realName, String avatar, String password, Collection<GrantedAuthority> authorities) {
         this.id = id;
         this.username = username;
-        this.realName = realName;
+        this.nickname = realName;
         this.avatar = avatar;
         this.password = password;
         this.authorities = authorities;

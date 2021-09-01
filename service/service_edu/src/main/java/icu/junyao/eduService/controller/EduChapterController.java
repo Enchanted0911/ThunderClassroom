@@ -1,12 +1,10 @@
 package icu.junyao.eduService.controller;
 
 
-import icu.junyao.commonUtils.R;
 import icu.junyao.eduService.entity.EduChapter;
 import icu.junyao.eduService.entity.chapter.ChapterVo;
 import icu.junyao.eduService.service.EduChapterService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

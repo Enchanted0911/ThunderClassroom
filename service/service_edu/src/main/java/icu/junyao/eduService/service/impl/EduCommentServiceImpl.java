@@ -2,16 +2,12 @@ package icu.junyao.eduService.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import icu.junyao.commonUtils.R;
-import icu.junyao.eduService.client.UcenterMember;
 import icu.junyao.eduService.entity.EduComment;
-import icu.junyao.eduService.entity.EduCourse;
 import icu.junyao.eduService.mapper.EduCommentMapper;
 import icu.junyao.eduService.service.EduCommentService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

@@ -2,9 +2,7 @@ package icu.junyao.acl.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import icu.junyao.acl.service.IndexService;
-import icu.junyao.commonUtils.R;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

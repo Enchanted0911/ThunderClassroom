@@ -1,6 +1,5 @@
-package cn.bizfocus.scm.order.res;
+package icu.junyao.serviceBase.enums;
 
-import cn.bizfocus.scm.order.enums.ResultCode;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -9,10 +8,9 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * 返回
+ * 统一返回结果
  *
- * @author songxuan
- * @date 2019/01/29
+ * @author wu
  */
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -22,7 +20,7 @@ public class R<T> implements Serializable {
 
     @ApiModelProperty(value = "状态码", required = true)
     private String code;
-    @ApiModelProperty(value = "承载数据")
+    @ApiModelProperty(value = "数据")
     private T data;
     @ApiModelProperty(value = "返回消息", required = true)
     private String msg;

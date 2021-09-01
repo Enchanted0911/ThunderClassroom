@@ -1,4 +1,4 @@
-package cn.bizfocus.scm.order.req;
+package icu.junyao.serviceBase.entity;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -7,7 +7,7 @@ import lombok.Data;
 import javax.validation.constraints.Min;
 
 /**
- * @author junsheng.wu
+ * @author wu
  * @since 2021-08-02
  */
 @ApiModel("查询分页基础条件")

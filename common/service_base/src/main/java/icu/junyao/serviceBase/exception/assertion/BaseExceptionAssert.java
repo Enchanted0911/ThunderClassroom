@@ -1,11 +1,7 @@
-package cn.bizfocus.scm.order.exception.assertion;
+package icu.junyao.serviceBase.exception.assertion;
 
-
-
-
-
-import cn.bizfocus.scm.order.enums.ResponseEnum;
-import cn.bizfocus.scm.order.exception.BaseException;
+import icu.junyao.serviceBase.enums.ResponseEnum;
+import icu.junyao.serviceBase.exception.BaseException;
 
 import java.text.MessageFormat;
 

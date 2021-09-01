@@ -5,7 +5,6 @@ import com.aliyun.vod.upload.req.UploadStreamRequest;
 import com.aliyun.vod.upload.resp.UploadStreamResponse;
 import com.aliyuncs.DefaultAcsClient;
 import com.aliyuncs.vod.model.v20170321.DeleteVideoRequest;
-import icu.junyao.serviceBase.exceptionHandler.JunYaoException;
 import icu.junyao.vod.service.VodService;
 import icu.junyao.vod.utils.ConstantVodUtils;
 import icu.junyao.vod.utils.InitObject;

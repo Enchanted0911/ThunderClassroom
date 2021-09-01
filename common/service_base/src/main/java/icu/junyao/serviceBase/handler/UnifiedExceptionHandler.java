@@ -1,15 +1,13 @@
-package cn.bizfocus.scm.order.handler;
+package icu.junyao.serviceBase.handler;
 
 
-import cn.bizfocus.scm.order.enums.ResultCode;
-import cn.bizfocus.scm.order.exception.BaseException;
-import cn.bizfocus.scm.order.res.R;
+import icu.junyao.serviceBase.enums.R;
+import icu.junyao.serviceBase.enums.ResultCode;
+import icu.junyao.serviceBase.exception.BaseException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.springframework.http.HttpStatus;
-import org.springframework.security.access.AccessDeniedException;
-import org.springframework.security.core.AuthenticationException;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.BindException;
 import org.springframework.validation.FieldError;
@@ -18,9 +16,11 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import javax.security.sasl.AuthenticationException;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
+import java.nio.file.AccessDeniedException;
 import java.util.Set;
 
 /**

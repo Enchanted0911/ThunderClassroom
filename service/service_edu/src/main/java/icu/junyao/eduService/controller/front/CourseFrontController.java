@@ -2,7 +2,6 @@ package icu.junyao.eduService.controller.front;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import icu.junyao.commonUtils.JwtUtils;
-import icu.junyao.commonUtils.R;
 import icu.junyao.commonUtils.ordervo.CourseWebVoOrder;
 import icu.junyao.eduService.client.OrdersClient;
 import icu.junyao.eduService.entity.EduCourse;
@@ -14,7 +13,6 @@ import icu.junyao.eduService.service.EduCourseService;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;

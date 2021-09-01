@@ -1,4 +1,4 @@
-package icu.junyao.serviceBase;
+package icu.junyao.serviceBase.config;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;

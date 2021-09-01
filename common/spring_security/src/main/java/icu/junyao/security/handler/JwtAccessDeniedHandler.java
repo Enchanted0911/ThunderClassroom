@@ -1,7 +1,7 @@
-package cn.bizfocus.scm.order.config;
+package icu.junyao.security.handler;
 
-import cn.bizfocus.scm.order.res.R;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import icu.junyao.serviceBase.enums.R;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * @author songxuan
+ * @author wu
  */
 @RequiredArgsConstructor
 @Component

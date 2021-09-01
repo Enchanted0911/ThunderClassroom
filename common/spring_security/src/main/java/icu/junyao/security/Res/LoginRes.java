@@ -1,4 +1,4 @@
-package cn.bizfocus.scm.order.res;
+package icu.junyao.security.Res;
 
 import lombok.Data;
 

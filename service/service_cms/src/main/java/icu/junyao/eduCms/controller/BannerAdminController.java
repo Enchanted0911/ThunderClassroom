@@ -4,14 +4,12 @@ package icu.junyao.eduCms.controller;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import icu.junyao.commonUtils.R;
 import icu.junyao.eduCms.entity.CrmBanner;
 import icu.junyao.eduCms.req.BannerReq;
 import icu.junyao.eduCms.service.CrmBannerService;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 /**

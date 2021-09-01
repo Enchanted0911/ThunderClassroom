@@ -8,12 +8,9 @@ import icu.junyao.acl.entity.User;
 import icu.junyao.acl.service.RoleService;
 import icu.junyao.acl.service.UserService;
 import icu.junyao.commonUtils.MD5;
-import icu.junyao.commonUtils.R;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 

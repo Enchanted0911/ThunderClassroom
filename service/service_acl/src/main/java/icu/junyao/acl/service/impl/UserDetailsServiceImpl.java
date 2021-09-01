@@ -3,7 +3,6 @@ package icu.junyao.acl.service.impl;
 import icu.junyao.acl.entity.User;
 import icu.junyao.acl.service.PermissionService;
 import icu.junyao.acl.service.UserService;
-import icu.junyao.security.entity.SecurityUser;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.BeanUtils;
 import org.springframework.security.core.userdetails.UserDetails;

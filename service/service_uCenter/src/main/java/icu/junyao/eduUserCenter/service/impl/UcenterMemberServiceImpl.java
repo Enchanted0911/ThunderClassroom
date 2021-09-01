@@ -8,10 +8,8 @@ import icu.junyao.eduUserCenter.mapper.UcenterMemberMapper;
 import icu.junyao.eduUserCenter.service.UcenterMemberService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import icu.junyao.eduUserCenter.utils.MD5;
-import icu.junyao.serviceBase.exceptionHandler.JunYaoException;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 

@@ -1,16 +1,11 @@
 package icu.junyao.eduService.controller.front;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import icu.junyao.commonUtils.R;
 import icu.junyao.eduService.entity.EduCourse;
 import icu.junyao.eduService.entity.EduTeacher;
 import icu.junyao.eduService.service.EduCourseService;
 import icu.junyao.eduService.service.EduTeacherService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.Cacheable;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

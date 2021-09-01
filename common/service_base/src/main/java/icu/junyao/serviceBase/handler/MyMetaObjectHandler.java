@@ -13,6 +13,7 @@ import java.time.LocalDateTime;
 public class MyMetaObjectHandler implements MetaObjectHandler {
     /**
      * MP功能 自动插入创建时间
+     *
      * @param metaObject
      */
     @Override
@@ -23,6 +24,7 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
 
     /**
      * MP 功能 自动插入修改时间
+     *
      * @param metaObject
      */
     @Override

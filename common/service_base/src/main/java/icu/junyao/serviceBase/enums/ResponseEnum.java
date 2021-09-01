@@ -1,4 +1,4 @@
-package cn.bizfocus.scm.order.enums;
+package icu.junyao.serviceBase.enums;
 
 /**
  * <pre>

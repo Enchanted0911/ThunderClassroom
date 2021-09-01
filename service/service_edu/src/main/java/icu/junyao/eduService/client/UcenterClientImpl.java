@@ -1,6 +1,5 @@
 package icu.junyao.eduService.client;
 
-import icu.junyao.commonUtils.R;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;

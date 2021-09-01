@@ -6,7 +6,6 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import icu.junyao.eduService.entity.EduSubject;
 import icu.junyao.eduService.entity.excel.SubjectData;
 import icu.junyao.eduService.service.EduSubjectService;
-import icu.junyao.serviceBase.exceptionHandler.JunYaoException;
 
 /**
  * @author wu
