@@ -15,17 +15,14 @@
  * Author: lengleng (wangiegie@gmail.com)
  */
 
-package icu.junyao.security.util;
+package cn.bizfocus.scm.order.util;
 
-import icu.junyao.security.entity.SecurityUser;
+import cn.bizfocus.scm.order.security.JwtUser;
 import lombok.experimental.UtilityClass;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 
 
-/**
- * @author wu
- */
 @UtilityClass
 public class SecurityUtils {
 
@@ -39,12 +36,12 @@ public class SecurityUtils {
      * 获取用户
      *
      * @param authentication 身份验证
-     * @return {@link SecurityUser}
+     * @return {@link JwtUser}
      */
-    public SecurityUser getUser(Authentication authentication) {
+    public JwtUser getUser(Authentication authentication) {
         Object principal = authentication.getPrincipal();
-        if (principal instanceof SecurityUser) {
-            return (SecurityUser) principal;
+        if (principal instanceof JwtUser) {
+            return (JwtUser) principal;
         }
         return null;
     }
@@ -53,9 +50,9 @@ public class SecurityUtils {
     /**
      * 获取用户
      *
-     * @return {@link SecurityUser}
+     * @return {@link JwtUser}
      */
-    public SecurityUser getUser() {
+    public JwtUser getUser() {
         Authentication authentication = getAuthentication();
         return getUser(authentication);
     }
@@ -64,10 +61,10 @@ public class SecurityUtils {
     /**
      * 获取用户id
      *
-     * @return {@link String}
+     * @return {@link Long}
      */
-    public String getUserId() {
-        return getUser().getCurrentUserInfo().getId();
+    public Long getUserId() {
+        return getUser().getId();
     }
 
 

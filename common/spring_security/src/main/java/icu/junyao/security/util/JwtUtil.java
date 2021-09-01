@@ -1,0 +1,76 @@
+package cn.bizfocus.scm.order.util;
+
+import cn.bizfocus.scm.order.security.JwtUser;
+import cn.bizfocus.scm.order.properties.JwtProperties;
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.JWTVerifier;
+import com.auth0.jwt.algorithms.Algorithm;
+import com.auth0.jwt.interfaces.DecodedJWT;
+import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.stereotype.Component;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+/**
+ * jwt工具类
+ *
+ * @author songxuan
+ * @date 2021/07/29
+ */
+@RequiredArgsConstructor
+@Component
+public class JwtUtil {
+
+
+    private final JwtProperties jwtProperties;
+
+
+    /**
+     * 根据用户信息生成一个 JWT
+     *
+     * @return JWT
+     */
+    public String createAccessToken(JwtUser user) {
+        Long accessTokenExpire = jwtProperties.getAccessTokenExpire();
+        String key = jwtProperties.getKey();
+        return createToken(user, accessTokenExpire, key);
+    }
+
+
+    public String createRefreshToken(JwtUser user) {
+        Long accessTokenExpire = jwtProperties.getRefreshTokenExpire();
+        String key = jwtProperties.getRefreshKey();
+        return createToken(user, accessTokenExpire, key);
+    }
+
+    public String createToken(JwtUser user, Long expires, String key) {
+        Algorithm algorithm = Algorithm.HMAC256(key);
+        Date date = new Date(System.currentTimeMillis() + expires);
+        return JWT.create()
+                .withSubject(user.getUsername())
+                .withClaim("authorities", user.getAuthorities().stream().map(GrantedAuthority::getAuthority).collect(Collectors.toList()))
+                .withExpiresAt(date)
+                .withIssuedAt(new Date())
+                .sign(algorithm);
+    }
+
+    public Optional<DecodedJWT> validateToken(HttpServletRequest request) {
+        String token = request.getHeader(jwtProperties.getHeader()).replace( jwtProperties.getPrefix(), "");
+        String key = jwtProperties.getKey();
+        Algorithm algorithm = Algorithm.HMAC256(key);
+        JWTVerifier validateToken = JWT.require(algorithm)
+                .build();
+        try {
+            DecodedJWT decodedJWT = validateToken.verify(token);
+            return Optional.of(decodedJWT);
+        } catch (Exception JWTVerificationException) {
+            return Optional.empty();
+        }
+
+    }
+
+}
