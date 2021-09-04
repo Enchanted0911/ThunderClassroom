@@ -15,9 +15,6 @@ import java.util.List;
  */
 public interface PermissionMapper extends BaseMapper<Permission> {
 
-
-    List<String> selectPermissionValueByUserId(String id);
-
     List<String> selectAllPermissionValue();
 
     List<Permission> selectPermissionByUserId(String userId);

@@ -1,7 +1,7 @@
 package icu.junyao.serviceBase.handler;
 
 
-import icu.junyao.serviceBase.enums.R;
+import icu.junyao.serviceBase.entity.R;
 import icu.junyao.serviceBase.enums.ResultCode;
 import icu.junyao.serviceBase.exception.BaseException;
 import lombok.extern.slf4j.Slf4j;

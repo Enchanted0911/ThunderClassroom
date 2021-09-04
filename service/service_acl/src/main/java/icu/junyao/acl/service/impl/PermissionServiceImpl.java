@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import icu.junyao.acl.entity.Permission;
 import icu.junyao.acl.entity.RolePermission;
 import icu.junyao.acl.entity.User;
+import icu.junyao.acl.entity.UserRole;
 import icu.junyao.acl.helper.MenuHelper;
 import icu.junyao.acl.helper.PermissionHelper;
 import icu.junyao.acl.mapper.PermissionMapper;
@@ -16,11 +17,13 @@ import icu.junyao.acl.service.UserRoleService;
 import icu.junyao.acl.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
@@ -102,9 +105,17 @@ public class PermissionServiceImpl extends ServiceImpl<PermissionMapper, Permiss
     @Override
     public List<String> selectPermissionValueByUserId(String id) {
 
-        List<String> selectPermissionValueList;
-        selectPermissionValueList = baseMapper.selectPermissionValueByUserId(id);
-        return selectPermissionValueList;
+        List<String> roleIdList = userRoleService.list(Wrappers.lambdaQuery(UserRole.class)
+                .eq(UserRole::getUserId, id))
+                .stream().map(UserRole::getRoleId).collect(Collectors.toList());
+        Set<String> permissionIdList = rolePermissionService.list(Wrappers.lambdaQuery(RolePermission.class)
+                .in(RolePermission::getRoleId, roleIdList))
+                .stream().map(RolePermission::getPermissionId).collect(Collectors.toSet());
+        return super.list(Wrappers.lambdaQuery(Permission.class)
+                .in(Permission::getId, permissionIdList))
+                .stream().map(Permission::getPermissionValue)
+                .collect(Collectors.toList());
+
     }
 
     @Override

@@ -22,8 +22,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 /**
- * @author songxuan
- * @date 2021/07/28
+ * @author wu
  */
 @EnableWebSecurity
 @Slf4j
@@ -62,7 +61,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         filter.setAuthenticationSuccessHandler(new JwtAuthenticationSuccessHandler(jwtUtil, objectMapper, jwtProperties));
         filter.setAuthenticationFailureHandler(new JwtAuthenticationFailureHandler(objectMapper));
         filter.setAuthenticationManager(super.authenticationManager());
-        filter.setFilterProcessesUrl("/authorize/login");
+        filter.setFilterProcessesUrl("/login");
         return filter;
     }
 

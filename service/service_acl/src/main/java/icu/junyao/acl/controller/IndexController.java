@@ -2,6 +2,7 @@ package icu.junyao.acl.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import icu.junyao.acl.service.IndexService;
+import icu.junyao.serviceBase.entity.R;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.GetMapping;

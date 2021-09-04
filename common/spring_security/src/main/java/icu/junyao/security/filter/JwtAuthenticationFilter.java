@@ -18,8 +18,7 @@ import java.io.InputStream;
 /**
  * jwt身份验证过滤器
  *
- * @author songxuan
- * @date 2021/08/02
+ * @author wu
  */
 @RequiredArgsConstructor
 public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilter {

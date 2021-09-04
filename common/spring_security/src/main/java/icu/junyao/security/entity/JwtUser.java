@@ -8,8 +8,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 
 /**
- * @author songxuan
- * @date 2021/07/28
+ * @author wu
  */
 @EqualsAndHashCode(callSuper = false)
 @Data

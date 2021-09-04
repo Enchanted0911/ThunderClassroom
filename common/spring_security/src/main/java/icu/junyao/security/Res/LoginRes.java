@@ -8,8 +8,7 @@ import java.util.Map;
 /**
  * 登录返回
  *
- * @author songxuan
- * @date 2021/07/29
+ * @author wu
  */
 @Data
 public class LoginRes {
@@ -30,7 +29,9 @@ public class LoginRes {
      */
     private Long expiresIn;
 
-    private UserInfoRes userInfo;
+    private String username;
 
-    private Map<String, List<DictItemRes>> dictItem;
+    private String nickname;
+
+    private String avatar;
 }

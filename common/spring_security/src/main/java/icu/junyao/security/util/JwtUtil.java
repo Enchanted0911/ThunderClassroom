@@ -1,7 +1,5 @@
 package icu.junyao.security.util;
 
-import cn.bizfocus.scm.order.properties.JwtProperties;
-import cn.bizfocus.scm.order.security.JwtUser;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
@@ -69,10 +67,8 @@ public class JwtUtil {
         try {
             DecodedJWT decodedJWT = validateToken.verify(token);
             return Optional.of(decodedJWT);
-        } catch (Exception JWTVerificationException) {
+        } catch (Exception e) {
             return Optional.empty();
         }
-
     }
-
 }

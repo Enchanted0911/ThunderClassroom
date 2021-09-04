@@ -16,7 +16,7 @@ public enum ResultCode {
 	/**
 	 * 一切OK
 	 */
-	SUCCESS("00000", "操作成功"),
+	SUCCESS("20000", "操作成功"),
 
 	/**
 	 /**

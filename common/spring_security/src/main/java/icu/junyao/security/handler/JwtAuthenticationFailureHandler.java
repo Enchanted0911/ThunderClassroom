@@ -1,7 +1,7 @@
 package icu.junyao.security.handler;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import icu.junyao.serviceBase.enums.R;
+import icu.junyao.serviceBase.entity.R;
 import icu.junyao.serviceBase.enums.ResultCode;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
